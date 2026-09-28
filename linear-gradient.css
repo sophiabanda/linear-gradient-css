@@ -33,7 +33,7 @@
         0 0;
 }
 /* Alternatively, the above becomes houndstooth-like with changes made to the background size and position */
-#two {
+/* #two {
     background-color: rgb(79, 4, 77);
     background-image:
         linear-gradient(-45deg, transparent 75%, rgb(162, 125, 14) 75%),
@@ -46,9 +46,10 @@
         2rem 0,
         1.5rem 0,
         1rem 0;
-}
+} */
 
-/* Crosses */
+/* Crosses - playing with background size and position will create other interesting patterns*/
+/* Note: The first called propery, in this case radial-g, is the top most layer. They go deeper as you add more. */
 #three {
     background-color: rgb(54, 25, 29);
     background-image:
@@ -70,4 +71,42 @@
         linear-gradient(teal 0.5rem, transparent 0.5rem),
         linear-gradient(90deg, teal 0.5rem, transparent 0.5rem);
     background-size: 2rem 2rem;
+}
+
+/* Evil eye accident */
+#five {
+    background-color: rgb(48, 44, 44);
+    background-image: radial-gradient(
+        circle,
+        transparent 1rem,
+        rgb(127, 127, 209) 1rem,
+        rgb(127, 127, 209) 3rem,
+        rgb(22, 22, 156) 3rem,
+        rgb(22, 22, 156) 5rem,
+        transparent 5rem
+    );
+    background-size: 10rem 10rem;
+}
+
+#five {
+}
+
+#six {
+    background-color: rgb(81, 215, 208);
+}
+
+#seven {
+    background-color: rgb(201, 222, 62);
+}
+
+#eight {
+    background-color: rgb(245, 215, 178);
+}
+
+#nine {
+    background-color: brown;
+}
+
+#ten {
+    background-color: blueviolet;
 }
