@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 200px);
+}
+
+/* Plaid. Changing background size values create multiple design options! */
+#one {
+    background-color: darkslateblue;
+    background-image:
+        linear-gradient(transparent 50%, rgb(240, 58, 58, 0.5) 50%),
+        linear-gradient(
+            90deg,
+            rgb(233, 98, 190) 50%,
+            rgb(37, 17, 137, 0.25) 50%
+        );
+    background-size: 2.5em 2.5em;
+}
+
+/* ZigZags - background position needs to have 50% of the first set of values */
+#two {
+    background-color: rgb(79, 4, 77);
+    background-image:
+        linear-gradient(-45deg, transparent 75%, rgb(162, 125, 14) 75%),
+        linear-gradient(45deg, transparent 75%, rgb(162, 125, 14) 75%),
+        linear-gradient(-135deg, transparent 75%, rgb(162, 125, 14) 75%),
+        linear-gradient(135deg, transparent 75%, rgb(162, 125, 14) 75%);
+    background-size: 4rem 4rem;
+    background-position:
+        2rem 0,
+        2rem 0,
+        0 0,
+        0 0;
+}
+/* Alternatively, the above becomes houndstooth-like with changes made to the background size and position */
+#two {
+    background-color: rgb(79, 4, 77);
+    background-image:
+        linear-gradient(-45deg, transparent 75%, rgb(162, 125, 14) 75%),
+        linear-gradient(45deg, transparent 75%, rgb(162, 125, 14) 75%),
+        linear-gradient(-135deg, transparent 75%, rgb(162, 125, 14) 75%),
+        linear-gradient(135deg, transparent 75%, rgb(162, 125, 14) 75%);
+    background-size: 7rem 6rem;
+    background-position:
+        3rem 0,
+        2rem 0,
+        1.5rem 0,
+        1rem 0;
+}
+
+/* Crosses */
+#three {
+    background-color: rgb(54, 25, 29);
+    background-image:
+        radial-gradient(circle, transparent 1rem, rgb(54, 25, 29) 1rem),
+        linear-gradient(pink 0.5rem, transparent 0.5rem),
+        linear-gradient(90deg, pink 0.5rem, transparent 0.5rem);
+    background-size: 5rem 5rem;
+    background-position:
+        5.25rem 5.25rem,
+        2.5rem 2.5rem,
+        2.5rem 2.5rem;
+}
+
+/* A crosses-attempt happy accident */
+#four {
+    background-color: rgb(55, 63, 46);
+    background-image:
+        radial-gradient(circle, transparent 1rem, pink 1rem),
+        linear-gradient(teal 0.5rem, transparent 0.5rem),
+        linear-gradient(90deg, teal 0.5rem, transparent 0.5rem);
+    background-size: 2rem 2rem;
+}
