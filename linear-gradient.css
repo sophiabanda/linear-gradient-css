@@ -48,8 +48,8 @@
         1rem 0;
 } */
 
-/* Crosses - playing with background size and position will create other interesting patterns*/
-/* Note: The first called propery, in this case radial-g, is the top most layer. They go deeper as you add more. */
+/* Crosses - playing with background size and position will create other interesting patterns
+     Note: The first called propery, in this case radial-g, is the top most layer. They go deeper as you add more. */
 #three {
     background-color: rgb(54, 25, 29);
     background-image:
@@ -78,17 +78,18 @@
     background-color: rgb(48, 44, 44);
     background-image: radial-gradient(
         circle,
-        transparent 1rem,
-        rgb(127, 127, 209) 1rem,
-        rgb(127, 127, 209) 3rem,
-        rgb(22, 22, 156) 3rem,
-        rgb(22, 22, 156) 5rem,
-        transparent 5rem
+        transparent 0.5rem,
+        rgb(127, 127, 209) 0.5rem,
+        rgb(127, 127, 209) 1.5rem,
+        rgb(22, 22, 156) 1.5rem,
+        rgb(22, 22, 156) 2.5rem,
+        transparent 2.5rem
     );
-    background-size: 10rem 10rem;
+    background-size: 5rem 5rem;
 }
 
 #five {
+    background-color: rgb(48, 44, 44);
 }
 
 #six {
