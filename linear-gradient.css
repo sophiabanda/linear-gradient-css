@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, 50vh);
 }
 
 /* Plaid. Changing background size values create multiple design options! */
@@ -15,6 +15,16 @@
             rgb(37, 17, 137, 0.25) 50%
         );
     background-size: 2.5em 2.5em;
+}
+
+/* Playing more with stripes */
+.one {
+    background-color: rgb(81, 215, 208, 0.5);
+    background-image:
+        linear-gradient(transparent 80%, rgb(22, 45, 75) 20%),
+        linear-gradient(90deg, transparent 75%, red 25%);
+    opacity: 0.5;
+    background-size: 2rem 2rem;
 }
 
 /* ZigZags - background position needs to have 50% of the first set of values */
@@ -33,7 +43,7 @@
         0 0;
 }
 /* Alternatively, the above becomes houndstooth-like with changes made to the background size and position */
-/* #two {
+.two {
     background-color: rgb(79, 4, 77);
     background-image:
         linear-gradient(-45deg, transparent 75%, rgb(162, 125, 14) 75%),
@@ -46,7 +56,7 @@
         2rem 0,
         1.5rem 0,
         1rem 0;
-} */
+}
 
 /* Crosses - playing with background size and position will create other interesting patterns
      Note: The first called propery, in this case radial-g, is the top most layer. They go deeper as you add more. */
@@ -55,7 +65,7 @@
     background-image:
         radial-gradient(circle, transparent 1rem, rgb(54, 25, 29) 1rem),
         linear-gradient(pink 0.5rem, transparent 0.5rem),
-        linear-gradient(90deg, pink 0.5rem, transparent 0.5rem);
+        linear-gradient(90deg, pink 0.5rem, transparent 0 5rem);
     background-size: 5rem 5rem;
     background-position:
         5.25rem 5.25rem,
@@ -93,7 +103,16 @@
 }
 
 #six {
-    background-color: rgb(81, 215, 208);
+    background-color: aliceblue;
+    background-image:
+        linear-gradient(transparent 95%, red 5%),
+        linear-gradient(90deg, transparent 95%, red 5%);
+    background-size: 0.5rem 0.5rem;
+    opacity: 0.2;
+}
+
+#six {
+    background-color: rgb(58, 3, 51);
 }
 
 #seven {
